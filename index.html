@@ -9,15 +9,46 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Genres</a>
-            <a href="#">Albums</a>
-            <a href="#">Playlists</a>
+    <div class="grid">
+        <nav class="nav"> 
+            <header>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">Playlists</a></li>
+                </ul>
+            </header>
         </nav>
-    </header>
-    
+        <main>
+            <div class="title-container">
+                <h1>Music Albums by Genre</h1>
+            </div>
+            <div class="genre-container-classical">
+                <h2 class="genre-title">Classical</h2>
+                <div id="albumsclassical"></div>
+            </div>
+            <div class="genre-container-jazz">
+                <h2 class="genre-title">Jazz</h2>
+                <div id="albumsjazz"></div>
+            </div>    
+            <div class="genre-container-electronic">
+                <h2 class="genre-title">Electronic</h2>
+                <div id="albumselectronic"></div>
+            </div>    
+            <div class="genre-container-postrock">
+                <h2 class="genre-title">Post-Rock</h2>
+                <div id="albumspostrock"></div>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Datenschutzt</a></li>
+                </ul>
+            </footer>
+        </main>
+    </div>
     
 </body>
 </html>

@@ -1,0 +1,44 @@
+/*-----GENERAL-----*/
+* {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/*TODO: HACER EL BODY BACKGROUND.*/
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+/*-----GRID-----*/
+
+.grid {
+    display: grid;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "classical classical jazz jazz"
+      "classical classical jazz jazz"
+      "electronic electronic postrock postrock"
+      "electronic electronic postrock postrock"
+      "footer footer footer footer"
+    
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(0, 0, 0);
+}
