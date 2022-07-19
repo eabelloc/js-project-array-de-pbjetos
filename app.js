@@ -205,13 +205,13 @@ const iterateList = (list, container) => {
 const generateHTML = (element, container) => {
     let myFigure;
     if ("name" in element) {
-        myFigure = `<figure>
+        myFigure = `<figure class="figure">
         <h2 class="album-title">${element.name} - ${element.year}</h2>
         <h3 class="artist">${element.artist}</h3>
         <img src="${element.image}" alt="${element.name}" width="200px"/>
         </figure>`;
     } else {
-        myFigure = `<figure>
+        myFigure = `<figure class="figure">
         <h2 class="apestas">🤢🤮</h1>
         <h3>What a BAD Concert!</h2>
         <img src="https://images-eu.ssl-images-amazon.com/images/I/31AriBG8mVL._SY264_BO1,204,203,200_QL40_ML2_.jpg">

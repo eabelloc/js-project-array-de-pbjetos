@@ -3,6 +3,12 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body {
+    background-image: url(./assets/pawel-czerwinski-_RuBiodu45k-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 ul {
     list-style: none;
 }
@@ -12,33 +18,119 @@ ul {
 h1 {
     font-size: 30px;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 0;  
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 0; 
 }
 
 img {
     width: 100%;
 }
 
-/*-----GRID-----*/
+/*-------------------------------------*/
+/*HEADER*/
 
-.grid {
-    display: grid;
-    height: 100vh;
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "header header header header"
-      "classical classical jazz jazz"
-      "classical classical jazz jazz"
-      "electronic electronic postrock postrock"
-      "electronic electronic postrock postrock"
-      "footer footer footer footer"
-    
+.list-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
-.nav {
-    grid-area: nav;
+li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 5px;    
     background-color: rgb(0, 0, 0);
+}
+
+li a:hover {
+    color: green;
+    background-color: yellow;
+}
+
+/*----------------------------------*/
+/*BODY*/
+
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title-container h1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.genre-title {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+#albumsclassical {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#albumsjazz {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#albumselectronic{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#albumspostrock{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.album-title {
+    margin: 0;
+}
+
+.figure {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: none;
+    width: 200px;
+}
+.figure {
+    border: 2px black;
 }
